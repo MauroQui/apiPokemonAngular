@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>{{ data.name | uppercase }}</h1>
+<div mat-dialog-content class="mat-dialog-content">
+  <img [src]="data.sprite" alt="{{ data.name }}" style="width: 150px; height: 150px;">
+  <div class="centered-container">
+    <p><strong>Poder:</strong> {{ data.base_experience }}</p>
+    <p><strong>Altura:</strong> {{ data.height / 10 }} m</p>
+    <p><strong>Habilidades:</strong> {{ getAbilities() }}</p>
+    <p><strong>Tipo:</strong> {{ getTypes() }}</p>
+    <p><strong>Movimientos:</strong> {{ getMovements() }}</p> 
+  </div>
+</div>
+<div mat-dialog-actions class="btn">
+  <button mat-raised-button color="primary" (click)="onClose()">Cerrar</button>
+</div>

@@ -1,0 +1,36 @@
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: linear-gradient(90deg, #3445db, #f30404);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+ 
+.mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+

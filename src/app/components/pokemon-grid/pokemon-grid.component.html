@@ -1,0 +1,15 @@
+<div class="grid-container">
+    <div *ngIf="loading()">
+      <div class="loader-container">
+        <span class="loader"></span>
+      </div>
+    </div>
+    <div class="grid" *ngIf="!loading()">
+      <div *ngFor="let pokemon of pokemons()">
+        <mat-card (click)="openDialog(pokemon)">
+          <img [src]="pokemon.sprites.front_default" alt="{{pokemon.name}}">
+          <mat-card-title>{{ pokemon.name | titlecase }}</mat-card-title>
+        </mat-card>
+      </div>
+    </div>
+</div>
